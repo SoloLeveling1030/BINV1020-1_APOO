@@ -1,9 +1,9 @@
 public class Livre extends Produit {
     private String titre;
     private String auteur;
-    private String nombrePages;
+    private int nombrePages;
 
-    public Livre(String reference, double prix, String titre, String auteur, String nombrePages) {
+    public Livre(String reference, double prix, String titre, String auteur, int nombrePages) {
         super(reference, prix);
         this.titre = titre;
         this.auteur = auteur;
@@ -18,7 +18,7 @@ public class Livre extends Produit {
         return auteur;
     }
 
-    public String getNombrePages() {
+    public int getNombrePages() {
         return nombrePages;
     }
 
