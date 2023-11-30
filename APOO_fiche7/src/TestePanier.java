@@ -7,10 +7,7 @@ public class TestePanier {
         System.out.println("Dvd One piece ajouté :"+p.ajouter(dvd1));
         System.out.println("Le prixTotal des produit est :"+p.caculerPrixTottal());
         System.out.println("Nombre de produit :"+ livre1.getNombrePages());
-        System.out.println("Livre   Harry Potter ajouté :"+p.ajouter(livre1) );
-        System.out.println("Dvd One piece ajouté :"+p.ajouter(dvd1));
-        System.out.println("Le prixTotal des produit est :"+p.caculerPrixTottal());
-        System.out.println("Nombre de produit :"+ livre1.getNombrePages());
+
     }
     
 }
