@@ -1,11 +1,11 @@
-public class Livre extends Produit {
+public class Livre extends ProduitAvecTitre {
     private String titre;
     private String auteur;
     private int nombrePages;
 
-    public Livre(String reference, double prix, String titre, String auteur, int nombrePages) {
-        super(reference, prix);
-        this.titre = titre;
+    public Livre(String titre, String titre1, String auteur, int nombrePages) {
+        super(titre);
+        this.titre = titre1;
         this.auteur = auteur;
         this.nombrePages = nombrePages;
     }

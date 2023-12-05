@@ -1,11 +1,11 @@
-public class Cd extends Produit {
+public class Cd extends ProduitAvecTitre {
     private String titre;
     private String artiste;
     private int nombreMorceau;
 
-    public Cd(String reference, double prix, String titre, String artiste, int nombreMorceau) {
-        super(reference, prix);
-        this.titre = titre;
+    public Cd(String titre, String titre1, String artiste, int nombreMorceau) {
+        super(titre);
+        this.titre = titre1;
         this.artiste = artiste;
         this.nombreMorceau = nombreMorceau;
     }
