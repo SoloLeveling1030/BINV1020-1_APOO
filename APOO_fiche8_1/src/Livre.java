@@ -1,17 +1,12 @@
 public class Livre extends ProduitAvecTitre {
-    private String titrLivre;
+
     private String auteur;
 
     private int nombrePages;
 
 
-    public String getTitrLivre() {
-        return titrLivre;
-    }
-
-    public Livre(String reference, double prix, String titre, String titrLivre, String auteur, int nombrePages) {
+    public Livre(String reference, double prix, String titre, String auteur, int nombrePages) {
         super(reference, prix, titre);
-        this.titrLivre = titrLivre;
         this.auteur = auteur;
         this.nombrePages = nombrePages;
     }
@@ -26,9 +21,7 @@ public class Livre extends ProduitAvecTitre {
 
     @Override
     public String toString() {
-        return "Livre{" +
-                "titre='" + titrLivre + '\'' +
-                ", auteur='" + auteur + '\'' +
+        return "Livre{auteur='" + auteur + '\'' +
                 ", nombrePages='" + nombrePages + '\'' +
                 '}';
     }

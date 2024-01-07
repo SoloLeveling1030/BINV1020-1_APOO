@@ -4,11 +4,11 @@ import java.util.Iterator;
 public class Panier implements Iterable<Produit> {
     private ArrayList<Produit> produits =new ArrayList<Produit>();
 
-    public boolean ajouter(Produit produit) throws PanierPleinException{
+    public boolean ajouter(Produit produit) throws PanierPleinException, IllegalArgumentException{
         return produits.add(produit);
     }
     public boolean supprimer(Produit produit) throws ProduitNonPresentException{
-        if (!produits.contains(produit))
+        if (produits.isEmpty())
             throw new ProduitNonPresentException("Le produit n'est pas présent");
         if (produit == null) {
             throw new IllegalArgumentException("il n'ya pas de produit ");

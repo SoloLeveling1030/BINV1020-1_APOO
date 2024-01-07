@@ -9,10 +9,6 @@ public abstract class ProduitAvecTitre {
         return titre;
     }
 
-    public void setTitre(String titre) {
-        this.titre = titre;
-    }
-
     @Override
     public String toString() {
         return "ProduitAvecTitre{" +

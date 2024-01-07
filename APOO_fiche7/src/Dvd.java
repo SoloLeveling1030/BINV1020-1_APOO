@@ -1,10 +1,10 @@
-public class Dvd extends ProduitAvecTitre{
+public class Dvd extends Produit{
     private String titre;
     private String realisateur;
 
-    public Dvd(String titre, String titre1, String realisateur) {
-        super(titre);
-        this.titre = titre1;
+    public Dvd(String reference, double prix, String titre, String realisateur) {
+        super(reference, prix);
+        this.titre = titre;
         this.realisateur = realisateur;
     }
 
